@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Engineer | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">DevOps<span class="accent">Engineer</span></span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="typewriter">DevOps Engineer</span>
+                </h1>
+                <p class="hero-subtitle">
+                    &lt; Building &amp; Scaling Cloud Infrastructure /&gt;
+                </p>
+                <div class="hero-description-box">
+                    <p class="hero-description">
+                        $ Passionate about automation, CI/CD, and cloud technologies.<br>
+                        Experienced in building robust, scalable infrastructure solutions that<br>
+                        drive business growth.
+                    </p>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary" id="download-resume">
+                        <i class="fas fa-download"></i>
+                        ./download-resume.sh
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        ls -la projects/
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/your-username" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/your-profile" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:your.email@example.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a passionate DevOps Engineer with 5 years of hands-on experience in designing, 
+                        implementing, and maintaining scalable cloud infrastructure. I specialize in creating 
+                        robust CI/CD pipelines, container orchestration, and infrastructure as code.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects Deployed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">99.9%</div>
+                            <div class="stat-label">Uptime Achieved</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">System Monitoring</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-title">infrastructure.yml</span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="code-keyword">apiVersion:</span> <span class="code-string">apps/v1</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-keyword">kind:</span> <span class="code-string">Deployment</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-keyword">metadata:</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-indent">name:</span> <span class="code-string">production-app</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-keyword">spec:</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-indent">replicas:</span> <span class="code-number">3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Senior DevOps Engineer</h3>
+                            <span class="timeline-date">2022 - Present</span>
+                        </div>
+                        <p class="timeline-company">Tech Innovation Corp</p>
+                        <ul class="timeline-achievements">
+                            <li>Led migration of legacy infrastructure to Kubernetes, reducing deployment time by 70%</li>
+                            <li>Implemented GitOps workflows with ArgoCD, improving deployment reliability</li>
+                            <li>Designed and maintained multi-cloud architecture (AWS, Azure, GCP)</li>
+                            <li>Mentored junior engineers on best practices for infrastructure automation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">DevOps Engineer</h3>
+                            <span class="timeline-date">2020 - 2022</span>
+                        </div>
+                        <p class="timeline-company">Cloud Solutions Ltd</p>
+                        <ul class="timeline-achievements">
+                            <li>Built comprehensive CI/CD pipelines using Jenkins and GitHub Actions</li>
+                            <li>Implemented infrastructure as code using Terraform and Ansible</li>
+                            <li>Established monitoring and alerting systems with Prometheus and Grafana</li>
+                            <li>Reduced deployment failures by 85% through automated testing and rollback procedures</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Junior DevOps Engineer</h3>
+                            <span class="timeline-date">2019 - 2020</span>
+                        </div>
+                        <p class="timeline-company">StartUp Dynamics</p>
+                        <ul class="timeline-achievements">
+                            <li>Containerized applications using Docker and deployed on Kubernetes</li>
+                            <li>Automated server provisioning and configuration management</li>
+                            <li>Implemented backup and disaster recovery procedures</li>
+                            <li>Collaborated with development teams to optimize application performance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fab fa-kubernetes"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Kubernetes Multi-Cluster Management</h3>
+                    <p class="project-description">
+                        Designed and implemented a multi-cluster Kubernetes management system with automated 
+                        failover, cross-cluster service discovery, and unified monitoring dashboard.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Helm</span>
+                        <span class="tech-tag">Istio</span>
+                        <span class="tech-tag">Prometheus</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Cloud-Native CI/CD Pipeline</h3>
+                    <p class="project-description">
+                        Built a comprehensive CI/CD pipeline using GitLab CI, Docker, and AWS ECS with 
+                        automated testing, security scanning, and blue-green deployments.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">GitLab CI</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">AWS ECS</span>
+                        <span class="tech-tag">Terraform</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Infrastructure Monitoring Stack</h3>
+                    <p class="project-description">
+                        Developed a complete observability solution with Prometheus, Grafana, and ELK stack 
+                        for real-time monitoring, alerting, and log analysis across microservices.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Prometheus</span>
+                        <span class="tech-tag">Grafana</span>
+                        <span class="tech-tag">ELK Stack</span>
+                        <span class="tech-tag">AlertManager</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Infrastructure as Code Automation</h3>
+                    <p class="project-description">
+                        Created a fully automated infrastructure provisioning system using Terraform, Ansible, 
+                        and GitHub Actions with policy validation and cost optimization.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Terraform</span>
+                        <span class="tech-tag">Ansible</span>
+                        <span class="tech-tag">GitHub Actions</span>
+                        <span class="tech-tag">OPA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-cloud"></i>
+                        Cloud Platforms
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Azure</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Google Cloud</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-shipping-fast"></i>
+                        Container & Orchestration
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Kubernetes</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Helm</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code-branch"></i>
+                        CI/CD & Automation
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Jenkins</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GitLab CI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GitHub Actions</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Infrastructure & Monitoring
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Terraform</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Ansible</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Prometheus & Grafana</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <img src="https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Solutions Architect" class="cert-logo">
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">AWS Certified Solutions Architect</h3>
+                        <p class="cert-provider">Amazon Web Services</p>
+                        <p class="cert-description">Professional-level certification demonstrating expertise in designing distributed systems on AWS</p>
+                        <div class="cert-details">
+                            <span class="cert-date">
+                                <i class="fas fa-calendar"></i>
+                                Valid: 2022 - 2025
+                            </span>
+                            <span class="cert-level">Professional</span>
+                        </div>
+                    </div>
+                    <div class="cert-verify">
+                        <a href="#" class="verify-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Verify
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <img src="https://images.credly.com/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png" alt="CKA" class="cert-logo">
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Certified Kubernetes Administrator (CKA)</h3>
+                        <p class="cert-provider">Cloud Native Computing Foundation</p>
+                        <p class="cert-description">Demonstrates skills in Kubernetes administration including cluster management and troubleshooting</p>
+                        <div class="cert-details">
+                            <span class="cert-date">
+                                <i class="fas fa-calendar"></i>
+                                Valid: 2023 - 2026
+                            </span>
+                            <span class="cert-level">Professional</span>
+                        </div>
+                    </div>
+                    <div class="cert-verify">
+                        <a href="#" class="verify-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Verify
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <img src="https://images.credly.com/images/336eebfc-0ac3-4553-9a67-b402f491f185/azure-administrator-associate-600x600.png" alt="Azure Administrator" class="cert-logo">
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Microsoft Azure Administrator Associate</h3>
+                        <p class="cert-provider">Microsoft</p>
+                        <p class="cert-description">Validates skills in implementing, managing, and monitoring Microsoft Azure environments</p>
+                        <div class="cert-details">
+                            <span class="cert-date">
+                                <i class="fas fa-calendar"></i>
+                                Valid: 2023 - 2024
+                            </span>
+                            <span class="cert-level">Associate</span>
+                        </div>
+                    </div>
+                    <div class="cert-verify">
+                        <a href="#" class="verify-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Verify
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <img src="https://images.credly.com/images/99289602-861e-4929-8277-773e63a2fa6f/image.png" alt="HashiCorp Terraform" class="cert-logo">
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">HashiCorp Certified: Terraform Associate</h3>
+                        <p class="cert-provider">HashiCorp</p>
+                        <p class="cert-description">Demonstrates knowledge of basic concepts and skills associated with HashiCorp Terraform</p>
+                        <div class="cert-details">
+                            <span class="cert-date">
+                                <i class="fas fa-calendar"></i>
+                                Valid: 2023 - 2025
+                            </span>
+                            <span class="cert-level">Associate</span>
+                        </div>
+                    </div>
+                    <div class="cert-verify">
+                        <a href="#" class="verify-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Verify
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <img src="https://images.credly.com/images/bd31ef42-d460-493e-8503-39592aaf0458/image.png" alt="Docker Certified" class="cert-logo">
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Docker Certified Associate</h3>
+                        <p class="cert-provider">Docker Inc.</p>
+                        <p class="cert-description">Validates Docker skills including containerization, orchestration, and security practices</p>
+                        <div class="cert-details">
+                            <span class="cert-date">
+                                <i class="fas fa-calendar"></i>
+                                Valid: 2022 - 2024
+                            </span>
+                            <span class="cert-level">Associate</span>
+                        </div>
+                    </div>
+                    <div class="cert-verify">
+                        <a href="#" class="verify-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Verify
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <img src="https://images.credly.com/images/1c2c86e1-16ce-4e4d-a425-d1ac96bb026d/image.png" alt="Jenkins Engineer" class="cert-logo">
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">CloudBees Certified Jenkins Engineer</h3>
+                        <p class="cert-provider">CloudBees</p>
+                        <p class="cert-description">Demonstrates expertise in Jenkins administration, pipeline creation, and CI/CD best practices</p>
+                        <div class="cert-details">
+                            <span class="cert-date">
+                                <i class="fas fa-calendar"></i>
+                                Valid: 2023 - 2024
+                            </span>
+                            <span class="cert-level">Professional</span>
+                        </div>
+                    </div>
+                    <div class="cert-verify">
+                        <a href="#" class="verify-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Verify
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <div class="blog-grid">
+                <article class="blog-card featured">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=400&h=250&fit=crop&crop=entropy&auto=format&q=80" alt="Kubernetes Best Practices">
+                        <div class="blog-category">DevOps</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                Dec 15, 2023
+                            </span>
+                            <span class="blog-reading-time">
+                                <i class="fas fa-clock"></i>
+                                8 min read
+                            </span>
+                        </div>
+                        <h3 class="blog-title">Kubernetes Security Best Practices: A Comprehensive Guide</h3>
+                        <p class="blog-excerpt">
+                            Explore essential security practices for Kubernetes clusters, including RBAC implementation, 
+                            network policies, and container security scanning in production environments.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">Kubernetes</span>
+                            <span class="blog-tag">Security</span>
+                            <span class="blog-tag">DevOps</span>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop&crop=entropy&auto=format&q=80" alt="CI/CD Pipeline">
+                        <div class="blog-category">CI/CD</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                Nov 28, 2023
+                            </span>
+                            <span class="blog-reading-time">
+                                <i class="fas fa-clock"></i>
+                                6 min read
+                            </span>
+                        </div>
+                        <h3 class="blog-title">Building Robust CI/CD Pipelines with GitLab and Terraform</h3>
+                        <p class="blog-excerpt">
+                            Learn how to create automated deployment pipelines that integrate infrastructure 
+                            provisioning with application deployment using GitLab CI and Terraform.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">GitLab</span>
+                            <span class="blog-tag">Terraform</span>
+                            <span class="blog-tag">IaC</span>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop&crop=entropy&auto=format&q=80" alt="Monitoring">
+                        <div class="blog-category">Monitoring</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                Nov 12, 2023
+                            </span>
+                            <span class="blog-reading-time">
+                                <i class="fas fa-clock"></i>
+                                10 min read
+                            </span>
+                        </div>
+                        <h3 class="blog-title">Implementing Observability with Prometheus and Grafana</h3>
+                        <p class="blog-excerpt">
+                            A deep dive into setting up comprehensive monitoring solutions for microservices 
+                            architecture using Prometheus, Grafana, and custom metrics.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">Prometheus</span>
+                            <span class="blog-tag">Grafana</span>
+                            <span class="blog-tag">Monitoring</span>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=400&h=250&fit=crop&crop=entropy&auto=format&q=80" alt="Cloud Migration">
+                        <div class="blog-category">Cloud</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                Oct 25, 2023
+                            </span>
+                            <span class="blog-reading-time">
+                                <i class="fas fa-clock"></i>
+                                12 min read
+                            </span>
+                        </div>
+                        <h3 class="blog-title">Multi-Cloud Strategy: Lessons from Enterprise Migration</h3>
+                        <p class="blog-excerpt">
+                            Real-world insights from migrating enterprise applications across multiple cloud 
+                            providers, including challenges, solutions, and cost optimization strategies.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">AWS</span>
+                            <span class="blog-tag">Azure</span>
+                            <span class="blog-tag">Migration</span>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="blog-cta">
+                <a href="#" class="btn btn-primary">
+                    <i class="fas fa-rss"></i>
+                    View All Posts
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Ready to collaborate?</h3>
+                    <p class="contact-description">
+                        I'm always interested in discussing new opportunities, 
+                        innovative projects, and ways to optimize infrastructure.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:your.email@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>your.email@example.com</span>
+                        </a>
+                        <a href="https://linkedin.com/in/your-profile" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://github.com/your-username" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Profile</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 DevOps Engineer Portfolio. Built with passion for automation and scalability.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
